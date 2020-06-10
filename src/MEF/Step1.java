@@ -18,6 +18,7 @@ public class Step1 extends javax.swing.JFrame {
      */
     public Step1() {
         initComponents();
+        setResizable(false);
     }
 
     /**
@@ -29,71 +30,74 @@ public class Step1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        botonBack = new javax.swing.JLabel();
+        botonSig = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png"))); // NOI18N
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        botonBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/back.png"))); // NOI18N
+        botonBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel2MouseEntered(evt);
+                botonBackMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel2MouseExited(evt);
+                botonBackMouseExited(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel2MousePressed(evt);
+                botonBackMousePressed(evt);
             }
         });
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
+        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/back.png"))); // NOI18N
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        botonSig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png"))); // NOI18N
+        botonSig.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel3MouseEntered(evt);
+                botonSigMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel3MouseExited(evt);
+                botonSigMouseExited(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel3MousePressed(evt);
+                botonSigMousePressed(evt);
             }
         });
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
+        getContentPane().add(botonSig, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/1.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/1.png"))); // NOI18N
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/nextover.png")));
-    }//GEN-LAST:event_jLabel2MouseEntered
+    private void botonBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBackMouseEntered
+        botonBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/backover.png")));
+    }//GEN-LAST:event_botonBackMouseEntered
 
-    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png")));    }//GEN-LAST:event_jLabel2MouseExited
+    private void botonBackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBackMouseExited
+        botonBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/back.png")));
+    }//GEN-LAST:event_botonBackMouseExited
 
-    private void jLabel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MousePressed
-        dispose();
-        new Step2().setVisible(true);
-    }//GEN-LAST:event_jLabel2MousePressed
-
-    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/backover.png")));
-    }//GEN-LAST:event_jLabel3MouseEntered
-
-    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/back.png")));
-    }//GEN-LAST:event_jLabel3MouseExited
-
-    private void jLabel3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MousePressed
+    private void botonBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBackMousePressed
         dispose();
         new Menu().setVisible(true);
-    }//GEN-LAST:event_jLabel3MousePressed
+    }//GEN-LAST:event_botonBackMousePressed
+
+    private void botonSigMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSigMouseEntered
+        botonSig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/nextover.png")));
+    }//GEN-LAST:event_botonSigMouseEntered
+
+    private void botonSigMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSigMouseExited
+        // TODO add your handling code here:
+        botonSig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png")));
+    }//GEN-LAST:event_botonSigMouseExited
+
+    private void botonSigMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSigMousePressed
+        System.out.println("Renderizando paso 2");
+        dispose();
+        new Step2().setVisible(true);
+    }//GEN-LAST:event_botonSigMousePressed
 
     
     /**
@@ -132,8 +136,8 @@ public class Step1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel background;
+    private javax.swing.JLabel botonBack;
+    private javax.swing.JLabel botonSig;
     // End of variables declaration//GEN-END:variables
 }
