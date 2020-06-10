@@ -16,6 +16,7 @@ public class Step2 extends javax.swing.JFrame {
      */
     public Step2() {
         initComponents();
+        setResizable(false);
     }
 
     /**
