@@ -16,6 +16,7 @@ public class Step3 extends javax.swing.JFrame {
      */
     public Step3() {
         initComponents();
+        setResizable(false);
     }
 
     /**
