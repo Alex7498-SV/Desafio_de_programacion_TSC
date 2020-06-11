@@ -80,6 +80,7 @@ public class Step6 extends javax.swing.JFrame {
     }//GEN-LAST:event_botonMenuMouseExited
 
     private void botonMenuMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMenuMousePressed
+        System.out.println("Renderizando el menu");
         dispose();
         new Menu().setVisible(true);
     }//GEN-LAST:event_botonMenuMousePressed
@@ -93,6 +94,7 @@ public class Step6 extends javax.swing.JFrame {
     }//GEN-LAST:event_botonBackMouseExited
 
     private void botonBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBackMousePressed
+        System.out.println("Regresando al paso 5");
         dispose();
         new Step5().setVisible(true);
     }//GEN-LAST:event_botonBackMousePressed

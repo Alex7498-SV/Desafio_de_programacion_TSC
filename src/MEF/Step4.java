@@ -78,6 +78,7 @@ public class Step4 extends javax.swing.JFrame {
     }//GEN-LAST:event_botonSigMouseExited
 
     private void botonSigMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSigMousePressed
+        System.out.println("Renderizando el paso 5");
         dispose();
         new Step5().setVisible(true);
     }//GEN-LAST:event_botonSigMousePressed
@@ -91,6 +92,7 @@ public class Step4 extends javax.swing.JFrame {
     }//GEN-LAST:event_botonBackMouseExited
 
     private void botonBackMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBackMousePressed
+        System.out.println("Regresando al paso 3");
         dispose();
         new Step3().setVisible(true);
     }//GEN-LAST:event_botonBackMousePressed
