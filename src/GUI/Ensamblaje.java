@@ -17,6 +17,7 @@ public class Ensamblaje extends javax.swing.JFrame {
     public Ensamblaje() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -28,14 +29,14 @@ public class Ensamblaje extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        background = new javax.swing.JLabel();
         botonReturn = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        background.setText("Inserte imagen aqui");
-
-        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Boton.png"))); // NOI18N
+        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png"))); // NOI18N
         botonReturn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 botonReturnMouseEntered(evt);
@@ -47,45 +48,30 @@ public class Ensamblaje extends javax.swing.JFrame {
                 botonReturnMousePressed(evt);
             }
         });
+        getContentPane().add(botonReturn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 360, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(142, 142, 142)
-                .addComponent(background)
-                .addContainerGap(446, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(botonReturn)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(124, 124, 124)
-                .addComponent(background)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 270, Short.MAX_VALUE)
-                .addComponent(botonReturn)
-                .addContainerGap())
-        );
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/elementos1.gif"))); // NOI18N
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, 256));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/the-matrix-1.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1250, 440));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonReturnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonReturnMouseEntered
-        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Botonover.png")));
+        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/nextover.png")));
     }//GEN-LAST:event_botonReturnMouseEntered
 
     private void botonReturnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonReturnMouseExited
-        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Boton.png")));
+        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png")));
     }//GEN-LAST:event_botonReturnMouseExited
 
     private void botonReturnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonReturnMousePressed
-        System.out.println("Regresando al menu");
+        System.out.println("Renderizando la parte 2 del ensamblaje");
         dispose();
-        new Menu().setVisible(true);
+        new Ensamblaje1().setVisible(true);
     }//GEN-LAST:event_botonReturnMousePressed
 
     /**
@@ -126,5 +112,6 @@ public class Ensamblaje extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
     private javax.swing.JLabel botonReturn;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

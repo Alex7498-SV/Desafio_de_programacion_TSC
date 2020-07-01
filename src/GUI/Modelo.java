@@ -17,6 +17,7 @@ public class Modelo extends javax.swing.JFrame {
     public Modelo() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**

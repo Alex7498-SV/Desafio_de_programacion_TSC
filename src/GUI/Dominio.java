@@ -18,6 +18,7 @@ public class Dominio extends javax.swing.JFrame {
     public Dominio() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**

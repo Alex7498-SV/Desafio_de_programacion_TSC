@@ -19,6 +19,7 @@ public class Step1 extends javax.swing.JFrame {
     public Step1() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -32,6 +33,7 @@ public class Step1 extends javax.swing.JFrame {
 
         botonBack = new javax.swing.JLabel();
         botonSig = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,7 +51,7 @@ public class Step1 extends javax.swing.JFrame {
                 botonBackMousePressed(evt);
             }
         });
-        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
+        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, -1));
 
         botonSig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png"))); // NOI18N
         botonSig.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -64,6 +66,9 @@ public class Step1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(botonSig, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/S1.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/1.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -139,5 +144,6 @@ public class Step1 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JLabel botonBack;
     private javax.swing.JLabel botonSig;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

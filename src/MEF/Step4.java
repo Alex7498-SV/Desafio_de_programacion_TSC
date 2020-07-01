@@ -17,6 +17,7 @@ public class Step4 extends javax.swing.JFrame {
     public Step4() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -30,6 +31,7 @@ public class Step4 extends javax.swing.JFrame {
 
         botonSig = new javax.swing.JLabel();
         botonBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,7 +63,10 @@ public class Step4 extends javax.swing.JFrame {
                 botonBackMousePressed(evt);
             }
         });
-        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
+        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/S4.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/4.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -137,5 +142,6 @@ public class Step4 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JLabel botonBack;
     private javax.swing.JLabel botonSig;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

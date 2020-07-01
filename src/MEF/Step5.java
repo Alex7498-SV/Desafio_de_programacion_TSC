@@ -17,6 +17,7 @@ public class Step5 extends javax.swing.JFrame {
     public Step5() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -30,6 +31,7 @@ public class Step5 extends javax.swing.JFrame {
 
         botonSig = new javax.swing.JLabel();
         botonBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,7 +63,10 @@ public class Step5 extends javax.swing.JFrame {
                 botonBackMousePressed(evt);
             }
         });
-        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
+        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/S5.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/5.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, -1));
@@ -78,9 +83,9 @@ public class Step5 extends javax.swing.JFrame {
     }//GEN-LAST:event_botonSigMouseExited
 
     private void botonSigMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSigMousePressed
-        System.out.println("Renderizando el paso 6");
+        System.out.println("Renderizando el paso 5.1");
         dispose();
-        new Step6().setVisible(true);
+        new Step51().setVisible(true);
     }//GEN-LAST:event_botonSigMousePressed
 
     private void botonBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBackMouseEntered
@@ -136,5 +141,6 @@ public class Step5 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JLabel botonBack;
     private javax.swing.JLabel botonSig;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

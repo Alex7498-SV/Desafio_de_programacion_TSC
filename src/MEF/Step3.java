@@ -17,6 +17,7 @@ public class Step3 extends javax.swing.JFrame {
     public Step3() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -30,6 +31,7 @@ public class Step3 extends javax.swing.JFrame {
 
         botonSig = new javax.swing.JLabel();
         botonBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,7 +63,10 @@ public class Step3 extends javax.swing.JFrame {
                 botonBackMousePressed(evt);
             }
         });
-        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
+        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/S3.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, 350));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/3.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -78,7 +83,7 @@ public class Step3 extends javax.swing.JFrame {
     }//GEN-LAST:event_botonSigMouseExited
 
     private void botonSigMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSigMousePressed
-        System.out.println("Renderizando paso 3");
+        System.out.println("Renderizando paso 4");
         dispose();
         new Step4().setVisible(true);
     }//GEN-LAST:event_botonSigMousePressed
@@ -136,5 +141,6 @@ public class Step3 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JLabel botonBack;
     private javax.swing.JLabel botonSig;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

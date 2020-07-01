@@ -17,6 +17,7 @@ public class Contorno extends javax.swing.JFrame {
     public Contorno() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -28,14 +29,13 @@ public class Contorno extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Background = new javax.swing.JLabel();
         botonReturn = new javax.swing.JLabel();
+        Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Background.setText("Inserte imagen aqui xD");
-
-        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Boton.png"))); // NOI18N
+        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png"))); // NOI18N
         botonReturn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 botonReturnMouseEntered(evt);
@@ -47,44 +47,25 @@ public class Contorno extends javax.swing.JFrame {
                 botonReturnMousePressed(evt);
             }
         });
+        getContentPane().add(botonReturn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 420, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(149, 149, 149)
-                .addComponent(Background)
-                .addContainerGap(462, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(botonReturn)
-                .addGap(30, 30, 30))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(97, 97, 97)
-                .addComponent(Background)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 295, Short.MAX_VALUE)
-                .addComponent(botonReturn)
-                .addGap(23, 23, 23))
-        );
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/pre.png"))); // NOI18N
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonReturnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonReturnMouseEntered
-        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Botonover.png")));
+        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/nextover.png")));
     }//GEN-LAST:event_botonReturnMouseEntered
 
     private void botonReturnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonReturnMouseExited
-        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Boton.png")));
+        botonReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png")));
     }//GEN-LAST:event_botonReturnMouseExited
 
     private void botonReturnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonReturnMousePressed
         dispose();
-        new Menu().setVisible(true);
+        new Contorno1().setVisible(true);
     }//GEN-LAST:event_botonReturnMousePressed
 
     /**

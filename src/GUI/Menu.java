@@ -2,12 +2,13 @@ package GUI;
 
 import GUI.Dominio;
 import MEF.Step1;
-
+import Componentes.general;
 public class Menu extends javax.swing.JFrame {
 
     public Menu() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     @SuppressWarnings("unchecked")
@@ -21,6 +22,7 @@ public class Menu extends javax.swing.JFrame {
         botonMEF = new javax.swing.JLabel();
         botonEnsamblaje = new javax.swing.JLabel();
         botonCContorno = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -94,7 +96,7 @@ public class Menu extends javax.swing.JFrame {
                 botonMEFMousePressed(evt);
             }
         });
-        getContentPane().add(botonMEF, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, 150, 40));
+        getContentPane().add(botonMEF, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 110, 150, 40));
 
         botonEnsamblaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Bensamblaje.png"))); // NOI18N
         botonEnsamblaje.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -108,7 +110,7 @@ public class Menu extends javax.swing.JFrame {
                 botonEnsamblajeMousePressed(evt);
             }
         });
-        getContentPane().add(botonEnsamblaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 150, 40));
+        getContentPane().add(botonEnsamblaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 150, 40));
 
         botonCContorno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Bcont.png"))); // NOI18N
         botonCContorno.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -122,7 +124,21 @@ public class Menu extends javax.swing.JFrame {
                 botonCContornoMousePressed(evt);
             }
         });
-        getContentPane().add(botonCContorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, -1));
+        getContentPane().add(botonCContorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Componentes.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel1MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel1MousePressed(evt);
+            }
+        });
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 160, -1));
 
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/menu.png"))); // NOI18N
         getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -237,6 +253,23 @@ public class Menu extends javax.swing.JFrame {
         new Contorno().setVisible(true);
     }//GEN-LAST:event_botonCContornoMousePressed
 
+    private void jLabel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MousePressed
+        // TODO add your handling code here
+        System.out.println("Mostrando locomponentes de la matriz");
+        dispose();
+        new general().setVisible(true);
+    }//GEN-LAST:event_jLabel1MousePressed
+
+    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
+        // TODO add your handling code here:
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/ComponentesOver.png")));
+    }//GEN-LAST:event_jLabel1MouseEntered
+
+    private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
+        // TODO add your handling code here:
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Componentes.png")));
+    }//GEN-LAST:event_jLabel1MouseExited
+
     
     
    
@@ -275,5 +308,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel botonMalla;
     private javax.swing.JLabel botonModelo;
     private javax.swing.JLabel botonTConectividades;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

@@ -17,6 +17,7 @@ public class Malla extends javax.swing.JFrame {
     public Malla() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**

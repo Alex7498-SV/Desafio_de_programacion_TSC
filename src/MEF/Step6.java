@@ -19,6 +19,7 @@ public class Step6 extends javax.swing.JFrame {
     public Step6() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -32,12 +33,13 @@ public class Step6 extends javax.swing.JFrame {
 
         botonMenu = new javax.swing.JLabel();
         botonBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        botonMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Bmenu.png"))); // NOI18N
+        botonMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png"))); // NOI18N
         botonMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 botonMenuMouseEntered(evt);
@@ -63,7 +65,10 @@ public class Step6 extends javax.swing.JFrame {
                 botonBackMousePressed(evt);
             }
         });
-        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
+        getContentPane().add(botonBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/S6.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/MEF/6.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -72,17 +77,17 @@ public class Step6 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonMenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMenuMouseEntered
-         botonMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Bmenuover.png")));
+         botonMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/nextover.png")));
     }//GEN-LAST:event_botonMenuMouseEntered
 
     private void botonMenuMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMenuMouseExited
-         botonMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Bmenu.png")));
+         botonMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/next.png")));
     }//GEN-LAST:event_botonMenuMouseExited
 
     private void botonMenuMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMenuMousePressed
-        System.out.println("Renderizando el menu");
+        System.out.println("Renderizando el paso 6.1");
         dispose();
-        new Menu().setVisible(true);
+        new Step61().setVisible(true);
     }//GEN-LAST:event_botonMenuMousePressed
 
     private void botonBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBackMouseEntered
@@ -138,5 +143,6 @@ public class Step6 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JLabel botonBack;
     private javax.swing.JLabel botonMenu;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

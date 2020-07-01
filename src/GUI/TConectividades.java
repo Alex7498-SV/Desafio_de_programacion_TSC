@@ -17,6 +17,7 @@ public class TConectividades extends javax.swing.JFrame {
     public TConectividades() {
         initComponents();
         setResizable(false);
+        this.setLocationRelativeTo(rootPane);
     }
 
     /**
@@ -29,6 +30,7 @@ public class TConectividades extends javax.swing.JFrame {
     private void initComponents() {
 
         botonReturn = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,6 +49,9 @@ public class TConectividades extends javax.swing.JFrame {
             }
         });
         getContentPane().add(botonReturn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/Tconectividades1.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, -1, -1));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/BgMalla.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -106,5 +111,6 @@ public class TConectividades extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
     private javax.swing.JLabel botonReturn;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
